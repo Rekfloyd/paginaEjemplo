@@ -1,0 +1,1 @@
+angular.module("Pagina", ["ngRoute","ngResource"]);

@@ -1,0 +1,38 @@
+<!DOCTYPE html>   <!--la app se diseña para MVC https://es.wikipedia.org/wiki/Modelo%E2%80%93vista%E2%80%93controlador
+						link para saber que es un MVC-->
+<html lang="en" ng-app="Pagina"><!-- Nombre del modulo de angular-->
+<head>
+    <meta charset="UTF-8">
+    <!--Importante si no no funciona jquery ni bootstrap-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Ejemplo</title>
+    <!--jquery-->
+    <script src="js/jquery-1.11.3.min.js" >					</script>
+    <script src="js/scripts.js"></script>
+    <!--jquery-->
+    <!--angular-->
+    <script src="angular/angular.min.js">					</script>
+    <script src="angular/angular-route.min.js">				</script><!--enrutamiento-->
+    <script src="angular/angular-resource.min.js">			</script><!--para manejar post y gets aun no lo manejaremos pero lo  																			haremos -->
+    <script src="angular/angular.js">						</script>
+    <script src="angular/Rutas.js">							</script><!--Donde definimos las rutas-->
+    <script src="angular/Controladores.js">					</script><!--Donde definimos el controlador-->
+     <!--angular-->
+	<!--bootstrap-->
+    <link   rel="stylesheet" href="css/bootstrap.css">
+    <link   rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <script src="js/bootstrap.min.js">						</script>
+    <!--bootstrap-->
+    <!--css-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!--css-->
+</head>
+<body ng-controller="Objetos" > <!--Nombre del controlador-->
+		
+		<div>
+			<p id="boton"> Esto es un boton</p><!--le asignamos una variable de angular-->
+			<p  id="texto" ng-model="comentario">Es es magia :D  {{comentario}}</p><!--Las dobles llaves son un especie de "PRINT" de angular-->
+			<input type="text" placeholder="Escribe algo" ng-model="comentario">
+		</div>
+</body>
+</html>
